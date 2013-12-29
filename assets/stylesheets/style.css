@@ -1,0 +1,18 @@
+.fixed-nav-bar {
+	background-color: red;
+	height: 41px;
+	margin-left: auto;
+	margin-right: auto;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+}
+
+.container.margin-top {
+	margin-top: 41px;
+}
+
+.extra-space {
+	height: 2000px;
+}
