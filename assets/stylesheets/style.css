@@ -1,17 +1,64 @@
-.fixed-nav-bar {
-	background-color: red;
-	left: 0;
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 960px;
+header {
+	background-color: lightblue;
 	position: fixed;
-	right: 0;
 	top: 0;
+	width: 100%;
 	z-index: 100;
 }
 
-.margin-top {
-	margin-top: 41px;
+.fixed-nav-bar {
+	font-size: 1.4em;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 960px;
+}
+
+.nav-bar-logo {
+	float: left;
+	padding: 20px 10px 20px 10px;
+}
+
+.nav-bar-menu {
+	float: right;
+	padding: 20px 0;
+}
+
+.nav-bar-menu ul {
+	margin-bottom: 0;
+}
+
+.nav-bar-menu li {
+	display: inline;
+	margin-bottom: 0;
+	padding-right: 10px;
+}
+
+.nav-bar-menu li a {
+	text-decoration: none;
+}
+
+.contact-us-button {
+	background-color: red;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	padding: 7px;
+}
+
+.introduction {
+	background-color: gray;
+	margin-top: 61px;
+}
+
+.our-process {
+}
+
+.get-started {
+	background-color: gray;
+}
+
+footer {
+	background-color: lightblue;
 }
 
 .extra-space {
