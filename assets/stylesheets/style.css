@@ -30,7 +30,7 @@ header {
 
 .nav-bar-menu {
   float: right;
-  font-family: 'Oranienbaum' serif;
+  font-family: 'MyriadLight', Helvetica, sans-serif;
   font-size: 1.25em;
   padding: 20px 0;
 }
@@ -72,16 +72,12 @@ header {
   visibility: hidden;
 }
 
-#studio-description {
-  font-family: 'Canter' sans-serif;
-  font-size: 2em;
-  font-weight: 900;
-  font-color: black;
-  width: 400px;
-  margin-left: auto;
-  margin-right: auto;
+#studio-description h1 {
+  color: #444;
+  font-family: 'Myriad', Helvetica, sans-serif;
+  font-size: 5em;
+  line-height: 1.1em;
   text-align: center;
-  visibility: hidden;
 }
 
 
@@ -98,6 +94,7 @@ header {
 
 .our-process h1 {
   color: #444;
+  font-family: 'Myriad', Helvetica, sans-serif;
   text-align: center;
   margin-top: 14px;
 }
@@ -108,14 +105,17 @@ header {
 
 .process-step-container h2 {
   color: #444;
+  font-family: 'Myriad', Helvetica, sans-serif;
 }
 
 .process-step-container p {
   color: #555;
-  font-size: 16px;
+  font-family: 'MyriadLight', Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 20px;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 90%;
 }
 
 .get-started {

@@ -9,10 +9,10 @@
 
 /* Table of Content
 ==================================================
-	#Site Styles
-	#Page Styles
-	#Media Queries
-	#Font-Face */
+  #Site Styles
+  #Page Styles
+  #Media Queries
+  #Font-Face */
 
 /* #Site Styles
 ================================================== */
@@ -23,41 +23,41 @@
 /* #Media Queries
 ================================================== */
 
-	/* Smaller than standard 960 (devices and browsers) */
-	@media only screen and (max-width: 959px) {}
+  /* Smaller than standard 960 (devices and browsers) */
+  @media only screen and (max-width: 959px) {}
 
-	/* Tablet Portrait size to standard 960 (devices and browsers) */
-	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+  /* Tablet Portrait size to standard 960 (devices and browsers) */
+  @media only screen and (min-width: 768px) and (max-width: 959px) {}
 
-	/* All Mobile Sizes (devices and browser) */
-	@media only screen and (max-width: 767px) {}
+  /* All Mobile Sizes (devices and browser) */
+  @media only screen and (max-width: 767px) {}
 
-	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+  /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+  @media only screen and (min-width: 480px) and (max-width: 767px) {}
 
-	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-	@media only screen and (max-width: 479px) {}
+  /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+  @media only screen and (max-width: 479px) {}
 
 
 /* #Font-Face
 ================================================== */
-/* 	This is the proper syntax for an @font-face file
-		Just create a "fonts" folder at the root,
-		copy your FontName into code below and remove
-		comment brackets */
+/*  This is the proper syntax for an @font-face file
+    Just create a "fonts" folder at the root,
+    copy your FontName into code below and remove
+    comment brackets */
 
-/*	@font-face {
-	    font-family: 'FontName';
-	    src: url('../fonts/FontName.eot');
-	    src: url('../fonts/FontName.eot?iefix') format('eot'),
-	         url('../fonts/FontName.woff') format('woff'),
-	         url('../fonts/FontName.ttf') format('truetype'),
-	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
-	    font-weight: normal;
-	    font-style: normal; }
+/*  @font-face {
+      font-family: 'FontName';
+      src: url('../fonts/FontName.eot');
+      src: url('../fonts/FontName.eot?iefix') format('eot'),
+           url('../fonts/FontName.woff') format('woff'),
+           url('../fonts/FontName.ttf') format('truetype'),
+           url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+      font-weight: normal;
+      font-style: normal; }
 */
 
-	@font-face {
+  @font-face {
     font-family: 'Canter';
     src: url('../fonts/canter_light-webfont.eot');
     src: url('../fonts/canter_light-webfont.eot?iefix') format('eot'),
@@ -66,9 +66,9 @@
          url('../fonts/canter_light-webfont.svg#webfontZam02nTh') format('svg');
     font-weight: light;
     font-style: light;
-	 }
+   }
 
-	@font-face {
+  @font-face {
     font-family: 'Oranienbaum';
     src: url('../fonts/oranienbaum-webfont.eot');
     src: url('../fonts/oranienbaum-webfont.eot?iefix') format('eot'),
@@ -77,4 +77,48 @@
          url('../fonts/oranienbaum-webfont.svg#webfontZam02nTh') format('svg');
     font-weight: normal;
     font-style: normal;
-	 }
+  }
+
+  @font-face {
+    font-family: 'Merriweather';
+    src: url('../fonts/merriweathersans-light-webfont.eot');
+    src: url('../fonts/merriweathersans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/merriweathersans-light-webfont.woff') format('woff'),
+         url('../fonts/merriweathersans-light-webfont.ttf') format('truetype'),
+         url('../fonts/merriweathersans-light-webfont.svg#merriweather_sansbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Myriad';
+    src: url('../fonts/myriadpro-black-webfont.eot');
+    src: url('../fonts/myriadpro-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/myriadpro-black-webfont.woff') format('woff'),
+         url('../fonts/myriadpro-black-webfont.ttf') format('truetype'),
+         url('../fonts/myriadpro-black-webfont.svg#myriad_problack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Agilis';
+    src: url('../fonts/agilis-webfont.eot');
+    src: url('../fonts/agilis-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/agilis-webfont.woff') format('woff'),
+         url('../fonts/agilis-webfont.ttf') format('truetype'),
+         url('../fonts/agilis-webfont.svg#agilisregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'MyriadLight';
+    src: url('../fonts/myriadpro-light-webfont.eot');
+    src: url('../fonts/myriadpro-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/myriadpro-light-webfont.woff') format('woff'),
+         url('../fonts/myriadpro-light-webfont.ttf') format('truetype'),
+         url('../fonts/myriadpro-light-webfont.svg#myriad_prolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
