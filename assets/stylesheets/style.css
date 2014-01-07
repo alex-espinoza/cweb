@@ -50,6 +50,7 @@ header {
 }
 
 .contact-us-button {
+  background-color: #ffe0b5;
   border: 1px solid #f9a56d;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -62,7 +63,8 @@ header {
 }
 
 .contact-us-button:hover {
-  background-color: #ffe0b5;
+  color: #444;
+  background-color: #f9a56d;
 }
 
 .introduction {
@@ -89,13 +91,9 @@ header {
   text-align: center;
 }
 
-
 .our-process {
   position: relative;
   background-color: #efefef;
-  //background-image: url("../images/color-desk-background.jpg");
-  //background-position: center top;
-  //background-size: cover;
   width: 100%;
   height: auto;
   z-index: -1;
@@ -105,7 +103,15 @@ header {
   color: #444;
   font-family: 'Myriad', Helvetica, sans-serif;
   text-align: center;
-  margin-top: 14px;
+  margin-top: 50px;
+}
+
+.first-process-row {
+  margin: 30px 0;
+}
+
+.second-process-row {
+  margin: 0 0 50px 0;
 }
 
 .process-step-container {
@@ -128,39 +134,42 @@ header {
 }
 
 .get-started {
-  background-color: gray;
+  background-color: #fff;
   position: relative;
   width: 100%;
   height: 400px;
+  text-align: center;
   z-index: -1;
 }
 
-.say-hello {
-  position: relative;
-  width: 300px;
-  text-align: center;
-  margin: 0 auto;
+.get-started h1 {
+  color: #444;
+  font-family: 'Myriad', Helvetica, sans-serif;
+  font-size: 3em;
   margin-top: 50px;
-}
-
-.say-hello h2{
-  font-family: 'Canter' sans-serif;
-  color: white;
-  font-size: 2em;
-  font-weight: 800;
   margin-bottom: 50px;
 }
 
-#connect {
-  width: 280px;
-  height: 100px;
-  margin-left: auto;
-  margin-right: auto;
+.get-started-button {
+  background-color: #ffe0b5;
+  border: 1px solid #f9a56d;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  color: #444;
+  font-family: 'MyriadLight', Helvetica, sans-serif;
+  font-size: 3em;
   padding: 10px 30px;
-  border: 1px solid white;
-  text-align: center;
   text-decoration: none;
-  color: white;
+  -moz-transition: background-color .3s;
+  -webkit-transition: background-color .3s;
+  -o-transition: background-color .3s;
+  transition: background-color .3s;
+}
+
+.get-started-button:hover {
+  color: #444;
+  background-color: #f9a56d;
 }
 
 footer {
