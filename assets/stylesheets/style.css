@@ -1,25 +1,33 @@
 header {
-	background-color: lightblue;
+	background-color: white;
 	position: fixed;
 	top: 0;
 	width: 100%;
 	z-index: 100;
 }
 
-.fixed-nav-bar {
-	font-size: 1.4em;
+#fixed-nav-bar {
+	font-size: 1em;
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 960px;
+	padding-top: 10px;
 }
 
-.nav-bar-logo {
+#nav-bar-logo {
 	float: left;
-	padding: 20px 10px 20px 10px;
+	padding: 15px 10px 12px 10px;
+	background-image: url("../images/croissantlogo.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 50px;
+	height: 50px;
 }
 
 .nav-bar-menu {
 	float: right;
+	font-family: 'Oranienbaum' serif;
+	font-size: 1.25em;
 	padding: 20px 0;
 }
 
@@ -38,7 +46,6 @@ header {
 }
 
 .contact-us-button {
-	background-color: red;
 	border-radius: 4px;
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
@@ -46,19 +53,86 @@ header {
 }
 
 .introduction {
-	background-color: gray;
-	margin-top: 61px;
+	height: 800px;
 }
 
+#logo-centered {
+	position: relative;
+	background-image: url("../images/croissant-io-logo-v2.png");
+	background-repeat: no-repeat;
+	height: 275px;
+	width: 275px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 145px;
+	visibility: hidden;
+}
+
+#studio-description {
+	font-family: 'Canter' sans-serif;
+	font-size: 2em;
+	font-weight: 900;
+	font-color: black;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	visibility: hidden;
+}
+
+
 .our-process {
+	position: relative;
+	background-color: #efefef;
+	//background-image: url("../images/color-desk-background.jpg");
+	//background-position: center top;
+	//background-size: cover;
+	width: 100%;
+	height: auto;
+	z-index: -1;
+}
+
+.our-process h1 {
+	color: #444;
+	text-align: center;
+	margin-top: 14px;
+}
+
+.process-step-container {
+	text-align: center;
+}
+
+.process-step-container-img {
+	text-align: center;
+}
+
+.process-step-container h2 {
+	color: #444;
+}
+
+.process-step-container p {
+	color: #555;
+	font-size: 16px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+
+.right-align {
+	text-align: right;
 }
 
 .get-started {
-	background-color: gray;
-}
+	position: relative;
+	background-image: url("../images/break-bread-us.jpg");
+	background-position: center center;
+	background-size: cover;
+	width: 100%;
+	height: 760px;
+	z-index: -1;}
 
 footer {
-	background-color: lightblue;
+	background-color: gray;
 }
 
 .extra-space {

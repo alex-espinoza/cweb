@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Website Title</title>
+  <title>Croissant</title>
   <link rel="stylesheet" href="assets/stylesheets/base.css" media="all">
   <link rel="stylesheet" href="assets/stylesheets/skeleton.css" media="all">
   <link rel="stylesheet" href="assets/stylesheets/layout.css" media="all">
+  <link rel="stylesheet" href="assets/stylesheets/animations.css" media="all">
   <link rel="stylesheet" href="assets/stylesheets/style.css" media="all">
   <script src="assets/javascripts/jquery-1.10.2.min.js"></script>
 </head>
 <body>
   <header>
-    <nav class="fixed-nav-bar">
-      <div class="nav-bar-logo">
-        LOGO HERE
+    <nav id="fixed-nav-bar" class="slideDown">
+      <div id="nav-bar-logo">
       </div>
       <div class="nav-bar-menu">
         <ul>
-          <li><a href="#">Introduction</a></li>
-          <li><a href="#">Our Process</a></li>
-          <li><a href="#" class="contact-us-button">Contact Us</a></li>
+          <li><a href="#">Approach</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#" class="contact-us-button">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -26,16 +26,82 @@
   <section class="introduction">
     <div class="container">
       <div class="sixteen columns">
-        <p>Introduction</p>
+        <div id="logo-centered" class="fadeIn"></div>
+           <div id="studio-description" class="fadeIn">
+          a creative digital design and web application development studio.
+        </div>
       </div>
     </div>
   </section>
   <section class="our-process">
     <div class="container">
       <div class="sixteen columns">
-        <p>Our Process</p>
+        <h1>Our Process</h1>
       </div>
-    </div>
+      <div class="sixteen columns clearfix">
+        <div class="eight columns alpha process-step-container">
+          <img src="http://placehold.it/200x200" />
+          <h2>Plan</h2>
+          <p>We'll sit down and talk with you about your ideas and vision. Together, let's figure out all the details, understand your business. learn about your users, and create a thorough plan of action.</p>
+        </div>
+        <div class="eight columns omega process-step-container">
+          <img src="http://placehold.it/200x200" />
+          <h2>Design</h2>
+          <p>A good first impression is everything. With your feedback, we'll create mockups and wireframes of every user interaction. From there, we'll design a beautiful experience that will delight your users.</p>
+        </div>
+      </div>
+      <div class="sixteen columns clearfix">
+        <div class="eight columns alpha process-step-container">
+          <img src="http://placehold.it/200x200" />
+          <h2>Develop</h2>
+          <p>High-quality, well-tested code is the cornerstone of every great application. Via weekly development cycles and using Agile methodologies, we'll carefully craft your product to be fully sustainable.</p>
+        </div>
+        <div class="eight columns omega process-step-container">
+          <img src="http://placehold.it/200x200" />
+          <h2>Launch</h2>
+          <p>After thorough testing, final polishing, and integration of metrics and analytics, your product will be prepared to launch. Your idea, fully realized.</p>
+        </div>
+      </div>
+      <!-- <div class="sixteen columns">
+        <h1>Our Process</h1>
+      </div>
+      <div class="sixteen columns clearfix">
+        <div class="eight columns alpha process-step-container-img">
+          <img src="http://placehold.it/200x200" />
+        </div>
+        <div class="eight columns omega process-step-container">
+          <h2>Plan</h2>
+          <p>We converse with you about your ideas and vision to brainstorm and create a plan of action.</p>
+        </div>
+      </div>
+      <div class="sixteen columns clearfix">
+        <div class="eight columns omega process-step-container right-align">
+          <h2>Plan</h2>
+          <p>We converse with you about your ideas and vision to brainstorm and create a plan of action.</p>
+        </div>
+        <div class="eight columns alpha process-step-container-img">
+          <img src="http://placehold.it/200x200" />
+        </div>
+      </div>
+      <div class="sixteen columns clearfix">
+        <div class="eight columns alpha process-step-container-img">
+          <img src="http://placehold.it/200x200" />
+        </div>
+        <div class="eight columns omega process-step-container">
+          <h2>Plan</h2>
+          <p>We converse with you about your ideas and vision to brainstorm and create a plan of action.</p>
+        </div>
+      </div>
+      <div class="sixteen columns clearfix">
+        <div class="eight columns omega process-step-container right-align">
+          <h2>Plan</h2>
+          <p>We converse with you about your ideas and vision to brainstorm and create a plan of action.</p>
+        </div>
+        <div class="eight columns alpha process-step-container-img">
+          <img src="http://placehold.it/200x200" />
+        </div>
+      </div>
+    </div> -->
   </section>
   <section class="get-started">
     <div class="container">
