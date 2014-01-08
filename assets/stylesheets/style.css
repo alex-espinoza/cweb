@@ -67,8 +67,23 @@ header {
 }
 
 .introduction {
-  background-color: #fffaf0;
-  height: 800px;
+  min-height: 100%;
+}
+
+.video-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+
+.introduction video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1000;
+  display: block;
 }
 
 #logo-centered {
@@ -84,7 +99,7 @@ header {
 }
 
 #studio-description h1 {
-  color: #444;
+  color: #FFF;
   font-family: 'Myriad', Helvetica, sans-serif;
   font-size: 5em;
   line-height: 1.1em;
