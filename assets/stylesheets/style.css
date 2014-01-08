@@ -3,7 +3,7 @@ html, body {
 }
 
 header {
-  background-color: white;
+  background-color: #fffaf0;
   position: fixed;
   top: 0;
   width: 100%;
@@ -67,6 +67,7 @@ header {
 }
 
 .introduction {
+  background-color: #fffaf0;
   height: 800px;
 }
 
@@ -92,6 +93,7 @@ header {
 
 .about-us {
   position: relative;
+  background-color: #fffaf0;
   border-top: 3px dashed #bbb;
   width: 100%;
   height: auto;
@@ -128,7 +130,7 @@ header {
 
 .our-process {
   position: relative;
-  background-color: #f4f3f6;
+  background-color: #fef7ff;
   border-top: 3px dashed #bbb;
   border-bottom: 3px dashed #bbb;
   width: 100%;
@@ -172,7 +174,7 @@ header {
 
 .get-started {
   position: relative;
-  background-color: #fff;
+  background-color: #fffaf0;
   width: 100%;
   height: auto;
   text-align: center;
