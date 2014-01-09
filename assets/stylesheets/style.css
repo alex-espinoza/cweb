@@ -68,22 +68,23 @@ header {
 
 .introduction {
   min-height: 100%;
+  position: relative;
 }
 
-.video-wrapper {
-  width: 100%;
+.video-container {
+  position: absolute;
   height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 
-
-.introduction video{
+.introduction video {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1000;
-  display: block;
+  width: 1440px; // fixed for now, change to 100% for responsive
+  height: auto;
+  z-index: 0;
 }
 
 #logo-centered {
@@ -99,11 +100,13 @@ header {
 }
 
 #studio-description h1 {
-  color: #FFF;
+  color: #ffe0b5;
   font-family: 'Myriad', Helvetica, sans-serif;
   font-size: 5em;
   line-height: 1.1em;
+  margin-top: 145px;
   text-align: center;
+  text-shadow: #000 2px 2px;
 }
 
 .about-us {
