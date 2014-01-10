@@ -98,10 +98,39 @@ header {
   text-shadow: #000 2px 2px;
 }
 
+.down-button-container {
+  background-color: #121518;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  color: #fafafa;
+  cursor: pointer;
+  font-size: 2.5em;
+  font-weight: bold;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  opacity: 0.7;
+  position: relative;
+  text-align: center;
+  width: 50px;
+}
+
+.down-button-container:hover {
+  opacity: 1;
+}
+
+.down-button-container p {
+  position: absolute;
+  top: 11px;
+  left: 14px;
+}
+
 .about-us {
   position: relative;
   background-color: #fffaf0;
-  border-top: 3px dashed #bbb;
+  border-top: 3px solid #bbb;
   width: 100%;
   height: auto;
   z-index: -1;
@@ -111,7 +140,7 @@ header {
   color: #444;
   font-family: 'Myriad', Helvetica, sans-serif;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 100px;
   margin-bottom: 20px;
 }
 
@@ -132,14 +161,14 @@ header {
 }
 
 .about-us h2:last-child {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .our-process {
   position: relative;
   background-color: #fffafa;
-  border-top: 3px dashed #bbb;
-  border-bottom: 3px dashed #bbb;
+  border-top: 3px solid #bbb;
+  border-bottom: 3px solid #bbb;
   width: 100%;
   height: auto;
   z-index: -1;
@@ -149,7 +178,7 @@ header {
   color: #444;
   font-family: 'Myriad', Helvetica, sans-serif;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .first-process-row {
@@ -157,7 +186,7 @@ header {
 }
 
 .second-process-row {
-  margin: 0 0 50px 0;
+  margin: 0 0 100px 0;
 }
 
 .process-step-container {
@@ -192,7 +221,7 @@ header {
   color: #444;
   font-family: 'Myriad', Helvetica, sans-serif;
   font-size: 3em;
-  margin-top: 50px;
+  margin-top: 100px;
   margin-bottom: 30px;
 }
 
@@ -208,7 +237,7 @@ header {
   font-weight: normal;
   height: auto;
   padding: 10px 30px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   text-shadow: none;
   text-decoration: none;
   -moz-transition: background .3s;

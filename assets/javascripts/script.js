@@ -7,4 +7,12 @@ $(document).ready(function() {
     "filename": "croissant",
     "types": ["mp4","webm"]
   });
+
+  $('#js-down-button').on('click', function() {
+    $.scrollTo($('section.about-us'), {
+      axis : 'y',
+      duration : 500
+    });
+    return false;
+  });
 });
