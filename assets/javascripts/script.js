@@ -15,4 +15,30 @@ $(document).ready(function() {
     });
     return false;
   });
+
+  $('#js-about-link').on('click', function() {
+    $.scrollTo($('section.about-us'), {
+      axis : 'y',
+      duration : 500
+    });
+    return false;
+  });
+
+  $('#js-process-link').on('click', function() {
+    $.scrollTo($('section.our-process'), {
+      axis : 'y',
+      duration : 500
+    });
+    return false;
+  });
+
+  $(window).scroll(function() {
+    var scrollTop = $(window).scrollTop();
+    if (scrollTop >= 780) {
+      $('#js-nav-slide').show();
+    }
+    else if (scrollTop < 779) {
+      $('#js-nav-slide').hide();
+    }
+  });
 });
