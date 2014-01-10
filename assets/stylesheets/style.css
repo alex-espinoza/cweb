@@ -69,22 +69,11 @@ header {
 .introduction {
   min-height: 100%;
   position: relative;
-}
-
-.video-container {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
+  background: rgba(254, 190, 110, 0.3);
 }
 
 .introduction video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 1440px; // fixed for now, change to 100% for responsive
-  height: auto;
-  z-index: 0;
+  background-color: #fffaf0;
 }
 
 #logo-centered {
@@ -100,11 +89,11 @@ header {
 }
 
 #studio-description h1 {
-  color: #ffe0b5;
+  color: #fafafa;
   font-family: 'Myriad', Helvetica, sans-serif;
   font-size: 5em;
   line-height: 1.1em;
-  margin-top: 145px;
+  margin-top: 200px;
   text-align: center;
   text-shadow: #000 2px 2px;
 }
