@@ -41,4 +41,59 @@ $(document).ready(function() {
       $('#js-nav-slide').hide();
     }
   });
+
+  $(window).scroll(function() {
+    $('#fly-left').each(function(){
+    var imagePos = $(this).offset().top;
+
+    var topOfWindow = $(window).scrollTop();
+      if (imagePos < topOfWindow+560) {
+        $(this).addClass("slideRight");
+      }
+    });
+  });
+
+  $(window).scroll(function() {
+    $('#fly-right').each(function(){
+    var imagePos = $(this).offset().top;
+
+    var topOfWindow = $(window).scrollTop();
+      if (imagePos < topOfWindow+560) {
+        $(this).addClass("slideLeft");
+      }
+    });
+  });
+
+  $(window).scroll(function() {
+    $('#fly-left-double').each(function(){
+    var imagePos = $(this).offset().top;
+
+    var topOfWindow = $(window).scrollTop();
+      if (imagePos < topOfWindow+575) {
+        $(this).addClass("slideRight");
+      }
+    });
+  });
+
+  $(window).scroll(function() {
+    $('#fly-right-double').each(function(){
+    var imagePos = $(this).offset().top;
+
+    var topOfWindow = $(window).scrollTop();
+      if (imagePos < topOfWindow+575) {
+        $(this).addClass("slideLeft");
+      }
+    });
+  });
+
+  $(window).scroll(function() {
+    $('#button-animate').each(function(){
+    var imagePos = $(this).offset().top;
+
+    var topOfWindow = $(window).scrollTop();
+      if (imagePos < topOfWindow+750) {
+        $(this).addClass("slideUp");
+      }
+    });
+  });
 });
