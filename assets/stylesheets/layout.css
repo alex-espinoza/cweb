@@ -122,3 +122,26 @@
     font-weight: normal;
     font-style: normal;
   }
+
+  @font-face {
+    font-family: 'Geosanslight';
+    src: url('../fonts/geosanslight-webfont.eot');
+    src: url('../fonts/geosanslight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/geosanslight-webfont.woff') format('woff'),
+         url('../fonts/geosanslight-webfont.ttf') format('truetype'),
+         url('../fonts/geosanslight-webfont.svg#myriad_prolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+   @font-face {
+    font-family: 'GeosanslightOblique';
+    src: url('../fonts/geosanslight-oblique-webfont.eot');
+    src: url('../fonts/geosanslight-oblique-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/geosanslight-oblique-webfont.woff') format('woff'),
+         url('../fonts/geosanslight-oblique-webfont.ttf') format('truetype'),
+         url('../fonts/geosanslight-oblique-webfont.svg#myriad_prolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
