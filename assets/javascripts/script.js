@@ -34,10 +34,10 @@ $(document).ready(function() {
 
   $(window).scroll(function() {
     var scrollTop = $(window).scrollTop();
-    if (scrollTop >= 780) {
+    if (scrollTop >= 925) {
       $('#js-nav-slide').show();
     }
-    else if (scrollTop < 779) {
+    else if (scrollTop < 925) {
       $('#js-nav-slide').hide();
     }
   });
@@ -47,7 +47,7 @@ $(document).ready(function() {
     var imagePos = $(this).offset().top;
 
     var topOfWindow = $(window).scrollTop();
-      if (imagePos < topOfWindow+560) {
+      if (imagePos < topOfWindow+660) {
         $(this).addClass("slideRight");
       }
     });
@@ -58,7 +58,7 @@ $(document).ready(function() {
     var imagePos = $(this).offset().top;
 
     var topOfWindow = $(window).scrollTop();
-      if (imagePos < topOfWindow+560) {
+      if (imagePos < topOfWindow+660) {
         $(this).addClass("slideLeft");
       }
     });
@@ -69,7 +69,7 @@ $(document).ready(function() {
     var imagePos = $(this).offset().top;
 
     var topOfWindow = $(window).scrollTop();
-      if (imagePos < topOfWindow+575) {
+      if (imagePos < topOfWindow+540) {
         $(this).addClass("slideRight");
       }
     });
@@ -80,7 +80,7 @@ $(document).ready(function() {
     var imagePos = $(this).offset().top;
 
     var topOfWindow = $(window).scrollTop();
-      if (imagePos < topOfWindow+575) {
+      if (imagePos < topOfWindow+540) {
         $(this).addClass("slideLeft");
       }
     });

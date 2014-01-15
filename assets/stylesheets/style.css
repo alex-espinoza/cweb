@@ -96,7 +96,7 @@ header {
   letter-spacing: 7px;
   font-weight: 800;
   line-height: 1.6em;
-  margin-top: 148px;
+  margin-top: 248px;
   text-align: center;
   text-shadow: #000 2px 1px;
   text-transform: uppercase;
@@ -143,15 +143,15 @@ header {
    width: 275px;
    margin-left: auto;
    margin-right: auto;
-   margin-top: 50px;
+   margin-top: 35px;
 }
 
 .about-us {
   position: relative;
   background-color: #FFF;
-  border-top: 3px solid #bbb;
   width: 100%;
   height: auto;
+  border-bottom: 7px double #EDE2D1;
   z-index: -1;
 }
 
@@ -161,7 +161,6 @@ header {
   font-weight: 600;
   font-size: 2.8em;
   text-align: center;
-  /*margin-top: 205px;*/
   margin-bottom: 10px;
 }
 
@@ -185,14 +184,12 @@ header {
 }
 
 .about-us h2:last-child {
-  margin-bottom: 120px;
+  margin-bottom: 150px;
 }
 
 .our-process {
   position: relative;
   background-color: #FFF;
-  border-top: 3px transparent #bbb;
-  border-bottom: 3px transparent #bbb;
   width: 100%;
   height: auto;
   z-index: -1;
@@ -203,7 +200,7 @@ header {
   font-family: 'GeosanslightOblique', Helvetica, sans-serif;
   font-weight: 600;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 120px;
 }
 
 .first-process-row {
@@ -233,7 +230,8 @@ header {
   line-height: 20px;
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
+  text-align: justify;
+  width: 76%;
 }
 
 #fly-left {
@@ -265,7 +263,7 @@ header {
   color: #444;
   font-family: 'Geosanslight', Helvetica, sans-serif;
   font-weight: 600;
-  font-size: 3em;
+  font-size: 2.75em;
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -275,17 +273,17 @@ header {
 }
 
 .get-started-button {
-  background: #ffe0b5;
+  background: #f9a56d;
   border: 1px solid #f9a56d;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
   color: #444;
   font-family: 'MyriadLight', Helvetica, sans-serif;
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: normal;
   height: auto;
-  padding: 10px 30px;
+  padding: 7px 16px;
   margin-bottom: 100px;
   text-shadow: none;
   text-decoration: none;
@@ -303,6 +301,23 @@ header {
 }
 
 footer {
-  height: 100px;
-  background-color: lightgray;
+  height: 150px;
+  background-color: rgb(52, 52, 51);
+  color: rgb(201, 201, 201);
+}
+
+footer p {
+  padding-top: 25px;
+  text-align: center;
+}
+
+.footer-logo {
+  position: relative;
+  text-align: center;
+}
+
+.footer-logo img {
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
