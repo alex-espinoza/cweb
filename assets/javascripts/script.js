@@ -32,15 +32,15 @@ $(document).ready(function() {
     return false;
   });
 
-  $(window).scroll(function() {
-    var scrollTop = $(window).scrollTop();
-    if (scrollTop >= 925) {
-      $('#js-nav-slide').show();
-    }
-    else if (scrollTop < 925) {
-      $('#js-nav-slide').hide();
-    }
-  });
+  // $(window).scroll(function() {
+  //   var scrollTop = $(window).scrollTop();
+  //   if (scrollTop >= 925) {
+  //     $('#js-nav-slide').show();
+  //   }
+  //   else if (scrollTop < 925) {
+  //     $('#js-nav-slide').hide();
+  //   }
+  // });
 
   $(window).scroll(function() {
     $('#fly-left').each(function(){

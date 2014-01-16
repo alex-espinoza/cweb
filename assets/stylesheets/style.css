@@ -15,6 +15,8 @@ header {
 }
 
 #fixed-nav-bar {
+  position: fixed;
+  top: 0;
   font-size: 1em;
   margin-left: auto;
   margin-right: auto;
@@ -22,7 +24,6 @@ header {
 }
 
 #nav-bar-logo {
-  float: left;
   padding: 15px 10px 12px 10px;
   background-image: url("../images/croissant-io-logo-small-v1.png");
   background-repeat: no-repeat;
@@ -32,7 +33,6 @@ header {
 }
 
 .nav-bar-menu {
-  float: right;
   font-family: 'MyriadLight', Helvetica, sans-serif;
   font-size: 1.2em;
   padding-top: 35px;
@@ -50,6 +50,7 @@ header {
 
 .nav-bar-menu li a {
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .contact-us-button {
@@ -113,7 +114,7 @@ header {
   font-size: 2.5em;
   font-weight: bold;
   height: 50px;
-  margin-top: 24%;
+  margin-top: 20%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
@@ -301,14 +302,15 @@ header {
 }
 
 footer {
-  height: 150px;
+  height: 100px;
   background-color: rgb(52, 52, 51);
   color: rgb(201, 201, 201);
 }
 
 footer p {
-  padding-top: 25px;
+  padding-top: 15px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .footer-logo {
@@ -317,7 +319,7 @@ footer p {
 }
 
 .footer-logo img {
-  margin-top: 15px;
+  margin-top: 5px;
   margin-left: auto;
   margin-right: auto;
 }
