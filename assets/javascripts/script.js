@@ -32,6 +32,14 @@ $(document).ready(function() {
     return false;
   });
 
+  $('#menu').on('click', function(){
+    $('#fixed-nav-bar').show();
+  });
+
+  $('#js-close-link').on('click', function(){
+    $('#fixed-nav-bar').hide();
+  });
+
   // $(window).scroll(function() {
   //   var scrollTop = $(window).scrollTop();
   //   if (scrollTop >= 825) {

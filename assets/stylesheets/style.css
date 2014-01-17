@@ -4,7 +4,6 @@ html, body {
 
 header {
   position: fixed;
-  background-color: #FFF;
   right: 0;
   width: 220px;
   height: 100%;
@@ -15,10 +14,17 @@ header {
   position: fixed;
   right: 5%;
   top: 5%;
-  width: 42px;
-  height: 36px;
   text-align: center;
-  z-index: 99;
+}
+
+#menu img{
+  vertical-align: middle;
+}
+
+#fixed-nav-bar {
+  height: 100%;
+  background-color: #FFF;
+  display: none;
 }
 
 #nav-bar-logo {
