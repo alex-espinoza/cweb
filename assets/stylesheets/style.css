@@ -4,19 +4,15 @@ html, body {
 
 header {
   background-color: #FFF;
-  -moz-box-shadow: 2px 2px 2px 2px #444;
-  -webkit-box-shadow: 2px 2px 2px 2px #444;
-  box-shadow: 2px 2px 2px 2px #ccc;
+  border-bottom: 1px solid gray;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 100;
-  display: none;
+  display: hidden;
 }
 
 #fixed-nav-bar {
-  position: fixed;
-  top: 0;
   font-size: 1em;
   margin-left: auto;
   margin-right: auto;
@@ -24,18 +20,24 @@ header {
 }
 
 #nav-bar-logo {
-  padding: 15px 10px 12px 10px;
-  background-image: url("../images/croissant-io-logo-small-v1.png");
+  position: absolute;
+/*  padding: 15px 10px 12px 10px;*/
+  background-image: url("../images/croissant-logo-extra-small.png");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: 50% 0;
   width: 80px;
-  height: 65px;
+  height: 80px;
+  top: 5px;
+  left: 436px;
 }
 
 .nav-bar-menu {
+  position: relative;
   font-family: 'MyriadLight', Helvetica, sans-serif;
   font-size: 1.2em;
-  padding-top: 35px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
 }
 
 .nav-bar-menu ul {
@@ -53,7 +55,15 @@ header {
   text-transform: uppercase;
 }
 
-.contact-us-button {
+.nav-bar-menu li:nth-child(2) {
+padding-right: 60px;
+}
+
+.nav-bar-menu li:nth-child(3) {
+padding-left: 60px;
+}
+
+/*.contact-us-button {
   background-color: #ffe0b5;
   border: 1px solid #f9a56d;
   -moz-border-radius: 4px;
@@ -69,7 +79,7 @@ header {
 .contact-us-button:hover {
   color: #444;
   background-color: #f9a56d;
-}
+}*/
 
 .introduction {
   min-height: 100%;
@@ -114,7 +124,7 @@ header {
   font-size: 2.5em;
   font-weight: bold;
   height: 50px;
-  margin-top: 20%;
+  margin-top: 18%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
@@ -144,7 +154,7 @@ header {
    width: 275px;
    margin-left: auto;
    margin-right: auto;
-   margin-top: 35px;
+   margin-top: 75px;
 }
 
 .about-us {
