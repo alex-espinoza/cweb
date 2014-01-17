@@ -96,4 +96,43 @@ $(document).ready(function() {
       }
     });
   });
+
+  $('.get-started-button').click(function() {
+    $('.contact-form').bPopup();
+  });
+
+  $('.contact-send-button').click(function() {
+    validateContactForm();
+  });
+
+  function validateContactForm() {
+    var contactData = {
+      name: $('#contact-form-name').val(),
+      email: $('#contact-form-email').val(),
+      message: $('#contact-form-message').val()
+    };
+
+    if (contactData.name === '' || contactData.email === '' || contactData.message === '') {
+      $('.contact-form-error').fadeIn();
+    }
+    else {
+      $('.contact-send-button').prop('disabled', true);
+      $('.contact-send-button').attr('value', 'Sending...');
+
+      $.ajax({
+        type: 'POST',
+        url: 'contact.php',
+        data: contactData,
+        success: function(){
+          console.log('it works!');
+          $('.before-send-form-container').fadeOut(function() {
+            $('.after-send-form-container').fadeIn();
+          });
+        }
+      });
+    }
+
+    return false;
+  };
+
 });
