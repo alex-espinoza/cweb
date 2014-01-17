@@ -34,10 +34,12 @@ $(document).ready(function() {
 
   $('#menu').on('click', function(){
     $('#fixed-nav-bar').show();
+    $('#menu').hide();
   });
 
   $('#js-close-link').on('click', function(){
     $('#fixed-nav-bar').hide();
+    $('#menu').show();
   });
 
   // $(window).scroll(function() {
