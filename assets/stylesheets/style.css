@@ -3,25 +3,26 @@ html, body {
 }
 
 header {
-  background-color: #FFF;
-  border-bottom: 1px solid gray;
   position: fixed;
-  top: 0;
-  width: 100%;
+  background-color: #FFF;
+  right: 0;
+  width: 220px;
+  height: 100%;
   z-index: 100;
-  display: hidden;
 }
 
-#fixed-nav-bar {
-  font-size: 1em;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 960px;
+#menu {
+  position: fixed;
+  right: 5%;
+  top: 5%;
+  width: 42px;
+  height: 36px;
+  text-align: center;
+  z-index: 99;
 }
 
 #nav-bar-logo {
   position: absolute;
-/*  padding: 15px 10px 12px 10px;*/
   background-image: url("../images/croissant-logo-extra-small.png");
   background-repeat: no-repeat;
   background-position: 50% 0;
@@ -47,20 +48,16 @@ header {
 .nav-bar-menu li {
   display: inline;
   margin-bottom: 0;
-  padding-right: 20px;
 }
 
 .nav-bar-menu li a {
+  display: block;
+  line-height: 50px;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-}
-
-.nav-bar-menu li:nth-child(2) {
-padding-right: 60px;
-}
-
-.nav-bar-menu li:nth-child(3) {
-padding-left: 60px;
+  border-bottom: 1px solid rgb(38,38,38);
+  transition: all .025s ease-out 0s;
 }
 
 /*.contact-us-button {
