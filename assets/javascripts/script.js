@@ -32,12 +32,22 @@ $(document).ready(function() {
     return false;
   });
 
+  $('#menu').on('click', function(){
+    $('#fixed-nav-bar').show();
+    $('#menu').hide();
+  });
+
+  $('#js-close-link').on('click', function(){
+    $('#fixed-nav-bar').hide();
+    $('#menu').show();
+  });
+
   // $(window).scroll(function() {
   //   var scrollTop = $(window).scrollTop();
-  //   if (scrollTop >= 925) {
+  //   if (scrollTop >= 825) {
   //     $('#js-nav-slide').show();
   //   }
-  //   else if (scrollTop < 925) {
+  //   else if (scrollTop < 826) {
   //     $('#js-nav-slide').hide();
   //   }
   // });
