@@ -49,7 +49,6 @@ header {
 
 .nav-bar-menu li {
   display: inline;
-  margin-bottom: 0;
 }
 
 .nav-bar-menu li a {
@@ -88,6 +87,7 @@ header {
 
 .introduction video {
   background-color: #fffaf0;
+  width: 100%;
 }
 
 .video-logo {
