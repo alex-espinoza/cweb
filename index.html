@@ -8,9 +8,10 @@
   <link rel="stylesheet" href="assets/stylesheets/style.css" media="all">
   <link rel="stylesheet" href="assets/stylesheets/layout.css" media="all">
   <script src="assets/javascripts/jquery-1.10.2.min.js"></script>
-  <script src="assets/javascripts/jquery.backgroundvideo.min.js"></script>
+  <!-- <script src="assets/javascripts/jquery.backgroundvideo.min.js"></script> -->
   <script src="assets/javascripts/jquery.scrollTo-1.4.3.1-min.js"></script>
   <script src="assets/javascripts/jquery.bpopup.min.js"></script>
+  <script src="assets/javascripts/modernizr.js"></script>
   <script src="assets/javascripts/script.js"></script>
 </head>
 <body>
@@ -33,18 +34,19 @@
   </header>
   <section class="introduction">
     <div class="video-container">
+      <div id="flash-fallback"></div>
       <div class="container">
-      <div class="sixteen columns">
-        <div id="studio-description" class="row fadeIn">
-          <h1>We help turn your ambitious ideas into a reality</h1>
+        <div class="sixteen columns">
+          <div id="studio-description" class="row fadeIn">
+            <h1>We help turn your ambitious ideas into a reality</h1>
+          </div>
+        </div>
+        <div class="sixteen columns">
+          <div id="js-down-button" class="down-button-container fadeIn">
+            <p>&#8744;</p>
+          </div>
         </div>
       </div>
-      <div class="sixteen columns">
-        <div id="js-down-button" class="down-button-container fadeIn">
-          <p>&#8744;</p>
-        </div>
-      </div>
-    </div>
     </div>
   </section>
   <section class="about-us">
@@ -121,5 +123,53 @@
       </div>
     </div>
   </footer>
+  <script>
+    // Since mobile won't "autoplay" the video,
+    // We want to exclude them from playing the background HTML5 Video
+
+    // Exclude the iPad
+    Modernizr.addTest('ipad', function () {
+      return !!navigator.userAgent.match(/iPad/i);
+    });
+
+    // Exclude the iPhone
+    Modernizr.addTest('iphone', function () {
+      return !!navigator.userAgent.match(/iPhone/i);
+    });
+
+    // Exclude the iPod touch
+    Modernizr.addTest('ipod', function () {
+      return !!navigator.userAgent.match(/iPod/i);
+    });
+
+    // Exclude android phones and tablets
+    Modernizr.addTest('android', function () {
+      return !!navigator.userAgent.match(/android/i);
+    });
+
+    // Add a  test to Modernizr combining all platforms
+    Modernizr.addTest('excludedplatforms', function () {
+      return (Modernizr.ipad || Modernizr.ipod || Modernizr.iphone || Modernizr.android);
+    });
+
+
+    // Specified platforms won't be able to play background video,
+    // But we serve them a nice extensible background image (see CSS).
+    if (!Modernizr.excludedplatforms) {
+
+      Modernizr.load({
+
+        // If the platform can play any of these video types…
+        test: Modernizr.video.webm || Modernizr.video.h264 || Modernizr.video.ogg,
+
+        // We load the jQuery plugin with a few functions
+        yep:  ['assets/javascripts/jquery.backgroundvideo.min.js', 'assets/javascripts/background-video.js'],
+
+        // If none of the above formats are supported,
+        // load the flash fallback with SWFObject
+        nope: ['//ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js', 'assets/javascripts/flash-fallback.js']
+      });
+    }
+  </script>
 </body>
 </html>
