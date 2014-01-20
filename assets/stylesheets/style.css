@@ -90,6 +90,14 @@ header {
   width: 100%;
 }
 
+body {
+  background: url('../images/mobile-image.jpg') 50% 50% fixed no-repeat;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+
 #flash-fallback {
   position: fixed;
   top: 0;
