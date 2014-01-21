@@ -58,36 +58,37 @@ header {
   text-decoration: none;
   text-transform: uppercase;
   border-bottom: 1px solid rgb(38,38,38);
+  -moz-transition: all .025s ease-out 0s;
+  -webkit-transition: all .025s ease-out 0s;
+  -o-transition: all .025s ease-out 0s;
   transition: all .025s ease-out 0s;
 }
 
-/*.contact-us-button {
-  background-color: #ffe0b5;
-  border: 1px solid #f9a56d;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-  padding: 7px;
-  -moz-transition: background-color .3s;
-  -webkit-transition: background-color .3s;
-  -o-transition: background-color .3s;
-  transition: background-color .3s;
+.introduction {
+  height: 100%;
+  position: relative;
+  background: url(../images/croissant-bg-1280x720.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-.contact-us-button:hover {
-  color: #444;
-  background-color: #f9a56d;
-}*/
-
-.introduction {
-  min-height: 100%;
-  position: relative;
+.introduction-opacity {
   background: rgba(43, 30, 15, 0.58);
+  position: absolute;
+  height: 100%;
+  width: 100%
 }
 
 .introduction video {
-  background-color: #fffaf0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1000;
+  display: block;
   width: 100%;
+  height: auto;
 }
 
 .video-logo {
@@ -102,11 +103,10 @@ header {
 #studio-description h1 {
   color: #fafafa;
   font-family: 'Geosanslight', Helvetica, sans-serif;
-  /*font-size: 4em;*/
   letter-spacing: 7px;
   font-weight: 800;
   line-height: 1.6em;
-  margin-top: 248px;
+  margin-top: 5em;
   text-align: center;
   text-shadow: #000 2px 1px;
   text-transform: uppercase;
@@ -314,7 +314,25 @@ header {
 .contact-form {
   display: none;
   background-color: #fff;
-  padding: 70px;
+  padding: 50px;
+}
+
+.contact-form h1 {
+  color: #444;
+  font-family: 'Geosanslight', Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 2.75em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.contact-form p {
+  color: #555;
+  font-family: 'MyriadLight', Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
 }
 
 .contact-form-error {
@@ -325,6 +343,13 @@ header {
 
 .contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea {
   background-color: #f7f7f7;
+  font-family: 'MyriadLight', Helvetica, sans-serif;
+  font-size: 18px;
+  width: 300px;
+}
+
+.contact-form textarea {
+  height: 100px;
 }
 
 .contact-send-button {
