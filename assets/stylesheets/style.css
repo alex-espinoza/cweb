@@ -339,6 +339,15 @@ nav {
   padding: 50px;
 }
 
+.close-contact-form {
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px;
+}
+
 .contact-form h1 {
   color: #444;
   font-family: 'Geosanslight', Helvetica, sans-serif;
@@ -431,4 +440,14 @@ footer p {
   margin-top: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@viewport{
+  zoom: 1.0;
+  width: extend-to-zoom;
+}
+
+@-ms-viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
 }

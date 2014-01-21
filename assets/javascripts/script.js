@@ -29,7 +29,7 @@ $(document).ready(function() {
       duration : 500
     });
     $('.contact-form').bPopup();
-      return false;
+    return false;
   });
 
   $('#js-show-menu').click(function(){ setTimeout(function() {
@@ -103,6 +103,10 @@ $(document).ready(function() {
     });
   });
 
+  $('.close-contact-form').click(function() {
+    $('.contact-form').bPopup().close();
+  });
+
   $('.contact-send-button').click(function() {
     validateContactForm();
   });
@@ -119,6 +123,7 @@ $(document).ready(function() {
     }
     else {
       $('.contact-send-button').prop('disabled', true);
+      $('.close-contact-form').hide();
       $('.contact-send-button').attr('value', 'Sending...');
 
       $.ajax({
@@ -126,8 +131,8 @@ $(document).ready(function() {
         url: 'contact.php',
         data: contactData,
         success: function(){
-          console.log('it works!');
           $('.before-send-form-container').fadeOut(function() {
+            $('.close-contact-form').show();
             $('.after-send-form-container').fadeIn();
           });
         }
