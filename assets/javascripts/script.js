@@ -24,7 +24,12 @@ $(document).ready(function() {
   });
 
   $('.contact-us-button').on('click', function() {
+    $.scrollTo($('section.get-started'), {
+      axis: 'y',
+      duration : 500
+    });
     $('.contact-form').bPopup();
+      return false;
   });
 
   $('#js-show-menu').click(function(){ setTimeout(function() {
