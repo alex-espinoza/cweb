@@ -148,7 +148,7 @@ slideLeft
 @keyframes slideLeft {
     0% {
         opacity: 0;
-        transform: translateX(180%);
+        transform: translateX(120%);
     }
 /*    50%{
         transform: translateX(-8%);
@@ -171,7 +171,7 @@ slideLeft
 @-webkit-keyframes slideLeft {
     0% {
         opacity: 0;
-        -webkit-transform: translateX(180%);
+        -webkit-transform: translateX(120%);
     }
  /*   50%{
         -webkit-transform: translateX(-8%);
@@ -214,7 +214,7 @@ slideRight
 @keyframes slideRight {
     0% {
         opacity: 0;
-        transform: translateX(-180%);
+        transform: translateX(-120%);
     }
  /*   50%{
         transform: translateX(8%);
@@ -236,7 +236,7 @@ slideRight
 
 @-webkit-keyframes slideRight {
     0% {
-        -webkit-transform: translateX(-180%);
+        -webkit-transform: translateX(-120%);
     }
 /*    50%{
         -webkit-transform: translateX(8%);

@@ -34,6 +34,10 @@
   @media only screen and (max-width: 767px) {
     .introduction {
       background: url(../images/croissant-bg-800x450.jpg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
     }
   }
 
@@ -53,6 +57,10 @@
 
     .introduction {
       background: url(../images/croissant-bg-480x270.jpg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
     }
 
     .logo-centered {
@@ -90,6 +98,10 @@
   @media only screen and (max-width: 255px){
     .introduction {
       background: url(../images/mobile-image.jpg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
     }
   }
 
