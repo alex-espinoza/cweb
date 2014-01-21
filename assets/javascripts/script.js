@@ -23,14 +23,18 @@ $(document).ready(function() {
     return false;
   });
 
-  $('#menu').on('click', function(){
-    $('#fixed-nav-bar').show();
-    $('#menu').hide();
+  $('.contact-us-button').on('click', function() {
+    $('.contact-form').bPopup();
   });
 
-  $('#js-close-link').on('click', function(){
-    $('#fixed-nav-bar').hide();
-    $('#menu').show();
+  $('#js-show-menu').click(function(){ setTimeout(function() {
+    $('nav').removeClass('hide').addClass('show');}, 100);
+    return false;
+  });
+
+  $('#js-close-link').click(function(){ setTimeout(function() {
+    $('nav').removeClass('show').addClass('hide');}, 100);
+    return false;
   });
 
   $(window).scroll(function() {
