@@ -56,7 +56,8 @@
     }
 
     .introduction {
-      background: url(../images/croissant-bg-480x270.jpg) no-repeat center center fixed;
+      background: url(../images/croissant-bg-480x270.jpg) no-repeat center bottom fixed;
+      max-height: 675px;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -95,9 +96,10 @@
     }
   }
 
-  @media only screen and (max-width: 255px){
+  @media only screen and (max-width: 355px){
     .introduction {
-      background: url(../images/mobile-image.jpg) no-repeat center center fixed;
+      background: url(../images/mobile-image.jpg) no-repeat center bottom fixed;
+      max-height: 400px;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
