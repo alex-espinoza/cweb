@@ -39,6 +39,10 @@
       -o-background-size: cover;
       background-size: cover;
     }
+
+    #studio-description h1 {
+      margin-top: 2.5em;
+    }
   }
 
   /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
@@ -56,13 +60,26 @@
     }
 
     .introduction {
-      background: url(../images/croissant-bg-480x270.jpg) no-repeat center bottom fixed;
-      max-height: 675px;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
+      background: url(../images/croissant-bg-480x270.jpg) no-repeat center top fixed;
+      max-height: 270px;
+      -webkit-background-size: 480px 270px;
+      -moz-background-size: 480px 270px;
+      -o-background-size: 480px 270px;
+      background-size: 480px 270px;
     }
+
+    #js-down-button {
+      width: 30px;
+      height: 30px;
+      font-size: 1.5em;
+      margin-top: 0%;
+    }
+
+    #js-down-button p {
+      top: 3px;
+      left: 8px;
+    }
+
 
     .logo-centered {
       margin-top: 25px;
@@ -97,13 +114,16 @@
   }
 
   @media only screen and (max-width: 355px){
-    .introduction {
+   /* .introduction {
       background: url(../images/mobile-image.jpg) no-repeat center bottom fixed;
-      max-height: 400px;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover;
+    }*/
+
+    .studio-description h1{
+      margin-top: .5em;
     }
   }
 
