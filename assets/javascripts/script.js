@@ -45,7 +45,7 @@ $(document).ready(function() {
   $(window).resize(function(){
      console.log('resize called');
      var width = $(window).width();
-     if(width >= 480){
+     if(width >= 960){
 
       $(window).scroll(function() {
         $('#fly-left').each(function(){
