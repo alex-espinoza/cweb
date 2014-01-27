@@ -165,6 +165,22 @@
       margin-bottom: 100px;
     }
 
+    #fly-left {
+      visibility: visible;
+    }
+
+    #fly-right {
+      visibility: visible;
+    }
+
+    #fly-left-double {
+      visibility: visible;
+    }
+
+    #fly-right-double {
+      visibility: visible;
+    }
+
     .our-process h1 {
       font-size: 2.2em;
       margin-top: 60px;
@@ -184,6 +200,10 @@
     .get-started h1 {
       font-size: 1.4em;
       line-height: 1.4em;
+    }
+
+    #button-animate {
+      visibility: visible;
     }
 
     .left-copy {
