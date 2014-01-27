@@ -267,19 +267,23 @@ nav {
 }
 
 #fly-left {
-  visibility: hidden;
+  visibility: visible;
 }
 
 #fly-right {
-  visibility: hidden;
+  visibility: visible;
 }
 
 #fly-left-double {
-  visibility: hidden;
+  visibility: visible;
 }
 
 #fly-right-double {
-  visibility: hidden;
+  visibility: visible;
+}
+
+#button-animate {
+  visibility: visible;
 }
 
 .get-started {
@@ -299,10 +303,6 @@ nav {
   letter-spacing: 1px;
   margin-top: 30px;
   margin-bottom: 45px;
-}
-
-#button-animate {
-  visibility: hidden;
 }
 
 .get-started-button {
