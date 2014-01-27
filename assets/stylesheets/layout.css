@@ -28,6 +28,30 @@
 
   /* Tablet Portrait size to standard 960 (devices and browsers) */
   @media only screen and (min-width: 768px) and (max-width: 959px) {
+     .introduction {
+      background: url(../images/croissant-bg-960x540.jpg) no-repeat center top fixed;
+      max-height: 540px;
+      -webkit-background-size: 960px 540px;
+      -moz-background-size: 960px 540px;
+      -o-background-size: 960px 540px;
+      background-size: 960px 540px;
+    }
+
+    #studio-description h1 {
+      margin-top: 2.8em;
+    }
+
+    #js-down-button {
+      width: 40px;
+      height: 40px;
+      font-size: 2.5em;
+      margin-top: 10%;
+    }
+
+    #js-down-button p {
+      top: 6px;
+      left: 9px;
+    }
   }
 
   /* All Mobile Sizes (devices and browser) */
@@ -46,7 +70,25 @@
   }
 
   /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-  @media only screen and (min-width: 480px) and (max-width: 767px) {}
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+
+    #studio-description h1 {
+      margin-top: 2.25em;
+    }
+
+    #js-down-button {
+      width: 40px;
+      height: 40px;
+      font-size: 2.5em;
+      margin-top: 10%;
+    }
+
+    #js-down-button p {
+      top: 6px;
+      left: 9px;
+    }
+
+  }
 
   /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
   @media only screen and (max-width: 479px) {
@@ -55,8 +97,10 @@
     }
 
     #studio-description h1 {
-      margin-top: 2em;
-      font-size: 1.75em;
+      margin-top: 1.5em;
+      font-size: 1.5em;
+      line-height: 30px;
+      letter-spacing: 5px;
     }
 
     .introduction {
@@ -82,7 +126,7 @@
 
 
     .logo-centered {
-      margin-top: 25px;
+      margin-top: 10px;
     }
 
     .about-us h1 {
@@ -93,11 +137,23 @@
 
     .about-us h2 {
       font-size: 1em;
-      text-align: justify;
+      text-align: left;
     }
 
     .get-started h1 {
-      font-size: 1.2em;
+      font-size: 1.4em;
+      line-height: 1.5em;
+    }
+
+    .about-us h2 {
+      font-size: 1em;
+      max-width: 480px;
+      padding-left: 10px;
+      padding-right: 1px;
+    }
+
+    .about-us h2:last-child{
+      margin-bottom: 100px;
     }
 
     .left-copy {
@@ -123,7 +179,9 @@
     }*/
 
     .studio-description h1{
-      margin-top: .5em;
+      margin-top: 1em;
+      font-size: 1.5em;
+      line-height: 26px;
     }
   }
 
