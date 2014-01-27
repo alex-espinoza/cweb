@@ -175,7 +175,7 @@ nav {
    width: 275px;
    margin-left: auto;
    margin-right: auto;
-   margin-top: 75px;
+   margin-top: 50px;
 }
 
 .about-us {
@@ -262,8 +262,8 @@ nav {
   line-height: 20px;
   margin-left: auto;
   margin-right: auto;
-  text-align: justify;
-  width: 76%;
+  text-align: left;
+  width: 85%;
 }
 
 #fly-left {
