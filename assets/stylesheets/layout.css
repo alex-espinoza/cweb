@@ -51,12 +51,12 @@
 
   @media only screen and (max-width: 1024px) and (orientation : landscape) {
     .introduction {
-      background: url(../images/croissant-bg-1280x720.jpg) no-repeat center center fixed;
-      max-height: 770px;
-       -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
+      background: url(../images/croissant-bg-1024x768.jpg) no-repeat center top fixed;
+      max-height: 768px;
+       -webkit-background-size: 1024px 768px;
+      -moz-background-size: 1024px 768px;
+      -o-background-size: 1024px 768px;
+      background-size: 1024px 768px;
     }
   }
 
