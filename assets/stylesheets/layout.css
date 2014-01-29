@@ -53,7 +53,7 @@
   @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation : landscape) {
     .introduction {
       background: url(../images/croissant-bg-1024x768.jpg) no-repeat center top fixed;
-      max-height: 768px;
+      max-height: 800px;
       max-width: 1024px;
        -webkit-background-size: 1024px 768px;
       -moz-background-size: 1024px 768px;
@@ -134,7 +134,13 @@
       top: 6px;
       left: 9px;
     }
+  }
 
+  /*Iphone 5 Landscape*/
+  @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) {
+    .introduction {
+      max-height: 345px;
+    }
   }
 
   /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
