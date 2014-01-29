@@ -49,10 +49,12 @@
   /* Smaller than standard 960 (devices and browsers) */
   @media only screen and (max-width: 959px) {}
 
-  @media only screen and (max-width: 1024px) and (orientation : landscape) {
+  /*Tablet Landscape*/
+  @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation : landscape) {
     .introduction {
       background: url(../images/croissant-bg-1024x768.jpg) no-repeat center top fixed;
       max-height: 768px;
+      max-width: 1024px;
        -webkit-background-size: 1024px 768px;
       -moz-background-size: 1024px 768px;
       -o-background-size: 1024px 768px;
@@ -150,6 +152,7 @@
 
     .introduction {
       background: url(../images/croissant-bg-480x270.jpg) no-repeat center top fixed;
+      max-width: 480px;
       max-height: 270px;
       -webkit-background-size: 480px 270px;
       -moz-background-size: 480px 270px;
