@@ -385,8 +385,8 @@ nav {
 }
 
 .contact-send-button {
-  background: #ffe0b5;
-  border: 1px solid #f9a56d;
+  background: #FFF;
+  border: 1px solid black;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
