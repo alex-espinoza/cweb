@@ -346,7 +346,8 @@ nav {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 5px;
+  padding-top: 10px;
+  padding-right: 10px;
 }
 
 .contact-form h1 {
