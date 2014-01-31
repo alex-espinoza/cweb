@@ -1,4 +1,4 @@
 name: Croissant
 markdown: redcarpet
 pygments: true
-permalink: /:title
+permalink: /blog/:title
