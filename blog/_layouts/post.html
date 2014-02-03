@@ -1,9 +1,24 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_long_string }}</p>
+<header>
+  <div class="container">
+    <div class="sixteen columns">
+      <a href="http://croissant.io/blog"><img src="http://croissant.io/assets/images/croissant-io-logo-small-v1.png" /></a>
+    </div>
+  </div>
+</header>
+<section>
+  <div class="container">
+    <div class="sixteen columns">
+      <div class="blog-post">
+        <h1>{{ page.title }}</h1>
+        <p class="date-tags">{{ page.date | date: '%B %-d, %Y' }}</p>
 
-<div class="post">
-{{ content }}
-</div>
+        <div class="post-content">
+        {{ content }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

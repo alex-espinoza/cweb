@@ -1,17 +1,24 @@
 ---
 layout: default
-title: Your New Jekyll Site
 ---
-
-<div id="home">
-  <!-- <h1>Blog Posts</h1> -->
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-        <br />
-        <span>{{ post.date | date_to_long_string }}</span>
-      </li>
-    {% endfor %}
-  </ul>
-</div>
+<header>
+  <div class="container">
+    <div class="sixteen columns">
+      <a href="http://croissant.io"><img src="http://croissant.io/assets/images/croissant-io-logo-small-v1.png" /></a>
+    </div>
+  </div>
+</header>
+<section>
+  <div class="container">
+    <div class="sixteen columns">
+      <ul class="post-list">
+        {% for post in site.posts %}
+          <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+            <p>{{ post.date | date: '%B %-d, %Y' }}</p>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
