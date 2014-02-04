@@ -2,7 +2,7 @@
 layout: post
 title:  "Test Post"
 date:   2014-02-03 13:14:58
-categories: jekyll update
+author: alex
 ---
 
 Hey wait, this is a copy of an existing post! To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
