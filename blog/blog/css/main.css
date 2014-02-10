@@ -99,6 +99,21 @@ header {
   margin: 1em 0;
 }
 
+.post-content p:last-child {
+  margin-bottom: 0;
+}
+
+.about-author {
+  line-height: 1.5em;
+  padding-bottom: 1.5em;
+  border-bottom: 7px double #EDE2D1;
+  margin-bottom: 1.5em;
+}
+
+.about-author p:first-child {
+  margin: 0 0 1em 0;
+}
+
 /*.site {
   text-align: justify;
   width: 42em;
